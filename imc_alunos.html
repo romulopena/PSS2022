@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<meta charset="utf-8"> 
+	<title>CÁLCULO IMC</title>
+<html>
+	<body>
+	  <h1 style="font-size: 50px;color: white;background:red ;text-align: center;">CALCULAR IMC DE:
+
+	  </h1>
+	  <p style="font-size: 50px ;text-align: center">
+		<script>
+		function calcular(peso, altura) {
+			return peso/(altura**2);
+		}
+		alert("CLIQUE EM OK PARA COMEÇAR");
+		let nome = prompt("Qual seu nome?");
+		let peso = prompt(nome + ", qual o seu peso?");
+		let altura = prompt(nome + ", qual a sua altura?");
+		let calculo = calcular(peso, altura);
+		let texto = ", seu IMC é: ";
+		let imc = calculo.toFixed(2);
+		document.write(nome.italics() + texto.bold() + imc.fontcolor("blue"));
+		</script>
+	  </p>
+	</body>	
+</html>
+
+
+
+
+
+
+
